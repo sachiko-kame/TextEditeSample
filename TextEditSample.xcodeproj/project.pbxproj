@@ -14,6 +14,11 @@
 		84E304C92046E9CC00A2AB95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E304C72046E9CC00A2AB95 /* LaunchScreen.storyboard */; };
 		84E304D42046E9CC00A2AB95 /* TextEditSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E304D32046E9CC00A2AB95 /* TextEditSampleTests.swift */; };
 		84E304DF2046E9CC00A2AB95 /* TextEditSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E304DE2046E9CC00A2AB95 /* TextEditSampleUITests.swift */; };
+		84E304ED2046EA0800A2AB95 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E304EC2046EA0800A2AB95 /* UITextViewExtension.swift */; };
+		84E304F02046EA7100A2AB95 /* Pattern1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E304EF2046EA7100A2AB95 /* Pattern1ViewController.swift */; };
+		84E304F22046EC2900A2AB95 /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E304F12046EC2900A2AB95 /* Other.swift */; };
+		84E304F42046EC9700A2AB95 /* ViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E304F32046EC9700A2AB95 /* ViewControllerView.swift */; };
+		84E304F62046ECB100A2AB95 /* ViewContorollerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E304F52046ECB100A2AB95 /* ViewContorollerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		84E304DA2046E9CC00A2AB95 /* TextEditSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextEditSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E304DE2046E9CC00A2AB95 /* TextEditSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditSampleUITests.swift; sourceTree = "<group>"; };
 		84E304E02046E9CC00A2AB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E304EC2046EA0800A2AB95 /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		84E304EF2046EA7100A2AB95 /* Pattern1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pattern1ViewController.swift; sourceTree = "<group>"; };
+		84E304F12046EC2900A2AB95 /* Other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Other.swift; sourceTree = "<group>"; };
+		84E304F32046EC9700A2AB95 /* ViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerView.swift; sourceTree = "<group>"; };
+		84E304F52046ECB100A2AB95 /* ViewContorollerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContorollerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +108,13 @@
 			isa = PBXGroup;
 			children = (
 				84E304BE2046E9CC00A2AB95 /* AppDelegate.swift */,
+				84E304F12046EC2900A2AB95 /* Other.swift */,
+				84E304F32046EC9700A2AB95 /* ViewControllerView.swift */,
 				84E304C02046E9CC00A2AB95 /* ViewController.swift */,
+				84E304F52046ECB100A2AB95 /* ViewContorollerModel.swift */,
 				84E304C22046E9CC00A2AB95 /* Main.storyboard */,
+				84E304EF2046EA7100A2AB95 /* Pattern1ViewController.swift */,
+				84E304EE2046EA2500A2AB95 /* Extension */,
 				84E304C52046E9CC00A2AB95 /* Assets.xcassets */,
 				84E304C72046E9CC00A2AB95 /* LaunchScreen.storyboard */,
 				84E304CA2046E9CC00A2AB95 /* Info.plist */,
@@ -123,6 +138,14 @@
 				84E304E02046E9CC00A2AB95 /* Info.plist */,
 			);
 			path = TextEditSampleUITests;
+			sourceTree = "<group>";
+		};
+		84E304EE2046EA2500A2AB95 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				84E304EC2046EA0800A2AB95 /* UITextViewExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E304ED2046EA0800A2AB95 /* UITextViewExtension.swift in Sources */,
+				84E304F42046EC9700A2AB95 /* ViewControllerView.swift in Sources */,
+				84E304F62046ECB100A2AB95 /* ViewContorollerModel.swift in Sources */,
+				84E304F02046EA7100A2AB95 /* Pattern1ViewController.swift in Sources */,
 				84E304C12046E9CC00A2AB95 /* ViewController.swift in Sources */,
+				84E304F22046EC2900A2AB95 /* Other.swift in Sources */,
 				84E304BF2046E9CC00A2AB95 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

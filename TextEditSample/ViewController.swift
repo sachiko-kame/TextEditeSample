@@ -9,17 +9,45 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var viewControllerModel = ViewContorollerModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        viewControllerModel.TableListtapded = { num in
+            self.Patternhow(Num:num)
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+    }
+    
+    override func loadView() {
+        self.view = ViewControllerView(model: viewControllerModel)
+    }
+    
+    func Patternhow(Num:Int){
+        print("Pattern")
+        var viewcontollore:UIViewController!
+        switch Num {
+        case 0:
+            viewcontollore = Pattern1ViewController()
+            viewcontollore.view.backgroundColor = .red
+        case 1:
+            viewcontollore = Pattern1ViewController()
+            viewcontollore.view.backgroundColor = .green
+        default:
+            viewcontollore = Pattern1ViewController()
+            viewcontollore.view.backgroundColor = .orange
+        }
+        
+        self.navigationController?.pushViewController(viewcontollore, animated: true)
     }
 
 
 }
+
 
